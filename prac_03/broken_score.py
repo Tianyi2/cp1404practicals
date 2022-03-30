@@ -6,6 +6,7 @@ import random
 
 
 def main():
+    """Get score, print out its result, and generate a random score and its result"""
     score = float(input("Enter score: "))
     result = check_result(score)
     print(result)
@@ -14,6 +15,7 @@ def main():
 
 
 def check_result(score):
+    """Determine the result of a score"""
     if score > 100 or score < 0:
         return "Invalid score"
     elif score >= 90:
