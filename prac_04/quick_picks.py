@@ -14,5 +14,6 @@ for i in range(pick):
             random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
         numbers.append(random_number)
         numbers.sort()
-
-
+    for number in range(AMOUNT_OF_RANDOM_NUMBER):
+        print(f"{numbers[number]:>2}", end=" ")
+    print()
