@@ -16,7 +16,8 @@ numbers[0] = "ten"
 print(numbers)
 
 # 2. Change the last element of numbers to 1
-
+numbers[-1] = 1
+print(numbers)
 
 # 3. Get all the elements from numbers except the first two (slice)
 
