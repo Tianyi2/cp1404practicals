@@ -20,7 +20,7 @@ numbers[-1] = 1
 print(numbers)
 
 # 3. Get all the elements from numbers except the first two (slice)
-
+print(numbers[2:])
 
 # 4. Check if 9 is an element of numbers
 
