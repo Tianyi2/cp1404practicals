@@ -7,8 +7,13 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-    data = get_data()
-    print(data)
+    datas = get_data()
+    display_subject_details(datas)
+
+
+def display_subject_details(datas):
+    for subject in range(len(datas)):
+        print(f"{datas[subject][0]} is taught by {datas[subject][1]:<12} and has {datas[subject][2]:>3} students")
 
 
 def get_data():
