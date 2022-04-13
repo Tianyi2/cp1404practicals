@@ -8,5 +8,8 @@ for i in range(len(text)):
     else:
         word_to_count.update({text[i]: 1})
 
+sorted_word_to_count = sorted(word_to_count.items())
 
+for i in range(len(sorted_word_to_count)):
+    print(f"{sorted_word_to_count[i][0]} : {sorted_word_to_count[i][1]}")
 
