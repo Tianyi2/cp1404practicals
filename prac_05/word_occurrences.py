@@ -11,5 +11,5 @@ for i in range(len(text)):
 sorted_word_to_count = sorted(word_to_count.items())
 
 for i in range(len(sorted_word_to_count)):
-    print(f"{sorted_word_to_count[i][0]} : {sorted_word_to_count[i][1]}")
+    print(f"{sorted_word_to_count[i][0]:10} : {sorted_word_to_count[i][1]}")
 
