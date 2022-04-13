@@ -8,8 +8,13 @@ for i in range(len(text)):
     else:
         word_to_count.update({text[i]: 1})
 
-sorted_word_to_count = sorted(word_to_count.items())
+sorted_words = sorted(word_to_count.items())
 
-for i in range(len(sorted_word_to_count)):
-    print(f"{sorted_word_to_count[i][0]:10} : {sorted_word_to_count[i][1]}")
+words = list(word_to_count.keys())
+words.sort()
+
+max_length = max((len(word) for word in words))
+
+for word in words:
+    print(f"{word:{max_length}} : {word_to_count[word]}")
 
