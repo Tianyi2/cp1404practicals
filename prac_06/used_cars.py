@@ -17,3 +17,5 @@ def main():
 
 
 main()
+
+limo = Car(100)
