@@ -8,5 +8,9 @@ class ConvertMilesKmDemo(App):
         self.root = Builder.load_file('convert_miles_km.kv')
         return self.root
 
+    def handle_increment(self, increment):
+        mile = int(self.root.ids.input_mile.text)
+        mile += increment
+        self.root.ids.input_mile.text = str(mile)
 
 ConvertMilesKmDemo().run()
