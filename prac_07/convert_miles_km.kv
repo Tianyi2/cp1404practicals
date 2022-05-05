@@ -7,6 +7,7 @@ BoxLayout:
             text: "0"
             font_size: 46
             multiline: False
+            on_text: app.handle_calculation()
         BoxLayout:
             orientation: "vertical"
             size_hint_x: 0.25
@@ -18,10 +19,8 @@ BoxLayout:
                 id: down
                 text: "Down"
                 on_press: app.handle_increment(-1)
-    Button:
-        id: convert
-        text: "Convert miles to km"
-        on_press:
+#    Button:
+#        text: "Convert miles to km"
+#        on_press: app.handle_calculation()
     Label:
-        id: output_label
-        text: ""
+        text: app.km_shows
