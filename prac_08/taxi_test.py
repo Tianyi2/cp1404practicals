@@ -2,7 +2,7 @@ from prac_08.taxi import Taxi
 
 
 def main():
-    prius_1 = Taxi(100, "Prius 1", price_per_km=1.23)
+    prius_1 = Taxi(100, "Prius 1")
     # 2. Drive the taxi 40 km
     prius_1.drive(40)
     # 3. Print the taxi's details and the current fare
