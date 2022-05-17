@@ -17,9 +17,10 @@ def main():
     print("Files in {}:\n{}\n".format(os.getcwd(), os.listdir('.')))
 
     # Make a new directory
-    # The next time you run this, it will crash if the directory exists
-    # TODO: Use exception handling to avoid the crash (just pass)
-    os.mkdir('temp')
+    try:
+        os.mkdir('temp')
+    except FileExistsError:
+        print("The file already exist")
 
     # Loop through each file in the (current) directory
     for filename in os.listdir('.'):
